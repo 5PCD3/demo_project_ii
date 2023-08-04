@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coursify</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+        <h1>Coursify</h1>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h3>Need developers, Find here</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veritatis doloribus consectetur, esse nesciunt earum voluptate laborum illum tempora nihil.</p>
+            <form action="/" method="post">
+                <label for="company_name">Company Name</label><br>
+                <input type="text" id="company_name" name="company_name" placeholder="XYZ Limited"><br>
+                <label for="role">Role</label><br>
+                <input type="text" id="role" name="role" placeholder="Developer"><br>
+                <label for="salary">Salary</label><br>
+                <input type="text" id="salary" name="salary" placeholder="XY LPA"><br>
+                <label for="experience">Min. Experience</label><br>
+                <input type="text" id="experience" name="experience" placeholder="X Years"><br>
+                <label for="about_organization">About your organization</label><br>
+                <input type="text" id="about_organization" name="about_organization" placeholder="Developer"><br><br>
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            
+              
+        </div>
+        <div class="right">
+            <h3>Searching for job, Find here</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, voluptatibus blanditiis. Temporibus sit totam reiciendis minima, aspernatur voluptas soluta nihil.</p>
+            <form action="/" method="post">
+                <label for="first_name">First name:</label><br>
+                <input type="text" id="first_name" name="first_name" placeholder="John"><br>
+                <label for="last_name">Last name:</label><br>
+                <input type="text" id="last_name" name="last_name" placeholder="Doe"><br>
+                <label for="experience">Experience</label><br>
+                <input type="text" id="experience" name="experience" placeholder="x years"><br>
+                <label for="email">Enter your email</label><br>
+                <input type="email" id="email" name="email" placeholder="test@gmail.com"><br>
+                <label for="role_search">What role you are looking for?</label><br>
+                <input type="text" id="role_search" name="role_search" placeholder="Full stack developer"><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="skills_required" name="skills_required">
+                    <label class="form-check-label" for="skills_required">
+                        Skills required? To check <a href="#tabular">click here</a>
+                    </label>
+                </div>
+                <label for="current_ctc">What is your current CTC?</label><br>
+                <input type="number" id="current_ctc" name="current_ctc" placeholder="XX LPA"><br>
+                <label for="desired_ctc">Desired CTC?</label><br>
+                <input type="text" id="desired_ctc" name="desired_ctc" placeholder="XX LPA"><br>
+                <label for="location">Where are you currently located?</label><br>
+                <input type="text" id="location" name="location" placeholder="Bangalore"><br><br>
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            
+              
+        </div>
+    </div>
+<div class="tabular2">
+  <div id="tabular">
+
+    <h2>Skills required for your Role given below</h2>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Role</th>
+            <th scope="col">Skils</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>FrontEnd Developer</td>
+            <td>HTML, CSS, JavaScript, ReactJs</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>BackEnd Developer</td>
+            <td>NodeJs, MongoDB, Express</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>FullStack Developer</td>
+            <td>HTML, CSS, JavaScript, ReactJs, NodeJs, MongoDB</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Data Analyst</td>
+            <td>Python, SQL, MongoDB, Statistics</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Graphic Designer</td>
+            <td>Adobe Photoshop, Maya, Blender, HTML</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Game Developer</td>
+            <td>Unity, Unreal Engine, Blender, C++, C#, Photoshop</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Machine Learning Engineer</td>
+            <td>Python, Machine Learning, Computer Vision, Natural Language Processing</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Flutter Developer</td>
+            <td>HTML, CSS3, JavaScript, OOPs</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>BlockChain Developer</td>
+            <td>DSA, Blockchain Architecture, Cryptography, Web Devlopment</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+   
+
+   <footer>
+    <h5>Coursify Pvt Ltd || All Rights Reserved</h5>
+   </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
